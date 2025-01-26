@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MyMusic</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">Library</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Welcome to MyMusic</h1>
+
+    <h2>Popular Songs</h2>
+    <div class="songs">
+      <div class="song" data-src="./music/cybercry.mp3" >
+  
+        <p>Cybercry -  Роза Уолтон, Халли Коггинс</p>
+        <h3>CyberPunk 2077</h3>
+        <button class="play-song-btn">▶️</button>
+      </div>
+      <div class="song" data-src="./music/secunda.mp3">
+        <p>Secunda - Jeremy Soul</p>
+        <h3>Skyrim</h3>
+        <button class="play-song-btn">▶️</button>
+      </div>
+      <div class="song" data-src="./music/Harvest Down - Jeremy Soule.mp3">
+        <p>Harvest Down - Jeremy Soul</p>
+        <h3>Oblivion</h3>
+        <button class="play-song-btn">▶️</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="music-player">
+    <button class="player-btn">⏮</button>
+    <button class="player-btn">⏯</button>
+    <button class="player-btn">⏭</button>
+    <input type="range" class="volume-slider" min="0" max="100">
+    <p id="current-song">No song playing</p>
+  </div>
+
+  <!-- <div class="glybina-text">Глубина</div> -->
+
+  <script src="main.js"></script>
+</body>
+</html>
